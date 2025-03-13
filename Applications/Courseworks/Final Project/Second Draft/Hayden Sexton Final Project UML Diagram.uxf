@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>200</y>
+      <w>610</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>Vehicle
+--
+- _name : String
+- _type : String
+- _class : String
+- _image : Image
+- _weakness : String
+- _description : String
+--
++ vehicles : List&lt;Vehicle&gt;
++ searchVehicles : Dictionary&lt;string, List&lt;Vehicle&gt;&gt;
+--
++ Name : String 
+	get
++ Type : String
+	get
++ Class : String
+	get
++ Image : Image
+	get
++ Weakness : String
+	get
++ Description : String
+	get
+--
++ addVehicle(vehicle : Vehicle)
+--
++ Vehicle (name : String, type : String, image : Image, weakness : String, description : String)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>790</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Air</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>790</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Ground</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>790</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Naval</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>600</y>
+      <w>30</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>600</y>
+      <w>30</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>600</y>
+      <w>30</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1150</x>
+      <y>330</y>
+      <w>660</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>AddEntry
+--
+- _passCode : String
+--
++ PassCode : String
+	get
+--
++ createEntry()
++ checkLogin()
+--
++ AddEntry (name : String, type : String, image : Image, weakness : String, description : String) : Vehicle
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1210</x>
+      <y>600</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Search
+--
+- _searchInput : String
+--
++ SearchInput : String
+	get
+--
++ executeSearch()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>540</y>
+      <w>180</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>370</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+</diagram>
